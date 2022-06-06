@@ -1,16 +1,37 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
+@layer base {
+  @font-face {
+    font-family: 'TitilliumRegular';
+    src: url('/fonts/text-fonts/TitilliumWeb-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TitilliumSemiBold';
+    src: url('/fonts/text-fonts/TitilliumWeb-SemiBold.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TitilliumBold';
+    src: url('/fonts/text-fonts/TitilliumWeb-Bold.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ProzaRegular';
+    src: url('/fonts/text-fonts/ProzaLibre-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ProzaBold';
+    src: url('/fonts/text-fonts/ProzaLibre-Bold.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+  }
 }
